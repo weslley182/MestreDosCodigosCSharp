@@ -6,8 +6,8 @@ namespace Exerc1_Calculadora.Servicos
     {
         public double ValorA { get; set; }
         public double ValorB { get; set; }
-        public string DescricaoValorA { get { return PegarDescriçaoValorParImpar(ValorA); } }
-        public string DescricaoValorB { get { return PegarDescriçaoValorParImpar(ValorB); } }
+        public string DescricaoValorA { get { return PegarDescricaoValorParImpar(ValorA); } }
+        public string DescricaoValorB { get { return PegarDescricaoValorParImpar(ValorB); } }
         
 
         public double Somar()
@@ -38,7 +38,7 @@ namespace Exerc1_Calculadora.Servicos
             return (valor % 2 == 0);
         }
 
-        private string PegarDescriçaoValorParImpar(double valor)
+        private string PegarDescricaoValorParImpar(double valor)
         {
             return TestarValorEhpar(valor) ? "Par" : "Ímpar";
         }
