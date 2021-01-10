@@ -29,7 +29,7 @@ namespace Exerc4_Alunos.Servicos
         {
             int nQuantidadeAlunos;
             string sNome;
-            string[] sNotas;
+            string sNotas;
             do
             {
                 Console.WriteLine("Quantos alunos serão verificados?");
@@ -41,7 +41,7 @@ namespace Exerc4_Alunos.Servicos
                 sNome = Console.ReadLine();
 
                 Console.WriteLine("Entre com as notas, separadas por ,(vírgula):");                
-                sNotas = Console.ReadLine().Split(",");
+                sNotas = Console.ReadLine();
 
                 Aluno aluno = new Aluno(sNome, sNotas);
                 aluno.TestarNotasValidas();

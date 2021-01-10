@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Globalization;
 
 namespace Exerc4_Alunos.Entidades
@@ -6,47 +7,55 @@ namespace Exerc4_Alunos.Entidades
     class Aluno
     {
         public string Nome { get; set; }
-        public string[] Notas { get; set; }
+        // public string[] Notas { get; set; }        
         public double Media { get { return CalcularMedia(); } }
+
+        public List<string> Notas = new List<string>();
+
+        public Aluno(string nome, string notas)
+        {
+            Nome = nome;
+
+            string[] sNotas = notas.Split(",");
+            for (int i = 0; i<= sNotas.Length -1; i++)
+            {
+                Notas.Add(sNotas[i]);
+            }
+            
+        }
 
         public double CalcularMedia()
         {
             double total = 0;
-            for (int i = 0; i<= Notas.Length-1; i++)
-            {
-                double nNota = PegarNota(i);
+            foreach (string nota in Notas)
+            {                
+                double nNota = PegarNota(nota);
                 total += nNota;
             }
 
-            return (total / Notas.Length);
+            return (total / Notas.Count);
         }
 
-        private double PegarNota(int i)
+        private double PegarNota(string nota)
         {
-            double nota;
+            double nNota;
 
             try
             {
-                nota = double.Parse(Notas[i].Trim());
+                nNota = double.Parse(nota.Trim());
             }
             catch
             {
                 throw new ArgumentException("Uma letra não pode ser digitada como nota.");
             }
              
-            if(nota < 0 || nota > 10)
+            if(nNota < 0 || nNota > 10)
             {
                 throw new ArgumentException("Digite uma nota entre 0 e 10.");
             }
 
-            return nota;
-        }
-
-        public Aluno(string nome, string[] notas)
-        {
-            Nome = nome;
-            Notas = (string[])notas.Clone();         
-        }
+            return nNota;
+        }        
 
         public override string ToString()
         {
@@ -56,9 +65,10 @@ namespace Exerc4_Alunos.Entidades
 
         public void TestarNotasValidas()
         {
-            for (int i = 0; i <= Notas.Length - 1; i++)
+            double nNota;
+            foreach (string nota in Notas)
             {
-                double nNota = PegarNota(i);            
+                nNota = PegarNota(nota);
             }
         }
     }
