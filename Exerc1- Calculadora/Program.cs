@@ -12,25 +12,12 @@ namespace Exerc1_Calculadora
         }
 
         private static void ExecutarCalculadora() 
-        {            
-            InformarValores(out double nValorA, out double nValorB);
-            Calculadora calculadora = new Calculadora(nValorA, nValorB);
+        {                        
+            Calculadora calculadora = new Calculadora();
             Processador processador = new Processador(calculadora);
 
             processador.ExibirDadosProcessamento();            
-        }        
-
-        private static void InformarValores(out double nValorA, out double nValorB)
-        {
-            do { 
-                Console.WriteLine("Digite o valor de A:"); 
-            } while (!(Double.TryParse(Console.ReadLine(), out nValorA)));
-
-            do
-            {
-                Console.WriteLine("Digite o valor de B:");
-            } while (!(Double.TryParse(Console.ReadLine(), out nValorB)));             
-        }
+        }                
         
     }
 }

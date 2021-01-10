@@ -7,40 +7,33 @@ namespace Exerc1_Calculadora.Servicos
 {
     public class Calculadora : ICalculadora
     {
-        private readonly double _valorA;
-        private readonly double _valorB;
-
-        public string DescricaoValorA { get { return PegarDescriçaoValorParImpar(_valorA); } }
-        public string DescricaoValorB { get { return PegarDescriçaoValorParImpar(_valorB); } }
-
-
-        public Calculadora(double valorA, double valorB)
-        {
-            _valorA = valorA;
-            _valorB = valorB;
-        }
+        public double ValorA { get; set; }
+        public double ValorB { get; set; }
+        public string DescricaoValorA { get { return PegarDescriçaoValorParImpar(ValorA); } }
+        public string DescricaoValorB { get { return PegarDescriçaoValorParImpar(ValorB); } }
+        
 
         public double Somar()
         {
-            return _valorA + _valorB;
+            return ValorA + ValorB;
         }
 
         public double Subtrair()
         {
-            return _valorA - _valorB;
+            return ValorA - ValorB;
         }
 
         public double Multiplicar()
         {
-            return _valorA * _valorB;
+            return ValorA * ValorB;
         }
         public double Dividir()
         {
-            if(_valorA == 0)
+            if(ValorA == 0)
             {
                 return 0;
             }
-            return _valorB / _valorA;
+            return ValorB / ValorA;
         }
 
         private bool TestarValorEhpar(double valor)

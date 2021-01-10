@@ -6,6 +6,8 @@ namespace Exerc1_Calculadora.Entidades
 {
     public interface ICalculadora
     {
+        double ValorA { get; set; }
+        double ValorB { get; set; }
         string DescricaoValorA { get; }
         string DescricaoValorB { get; }
         public double Somar();

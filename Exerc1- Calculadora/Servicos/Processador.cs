@@ -8,10 +8,30 @@ namespace Exerc1_Calculadora.Servicos
 {
     public class Processador
     {
+        private double _valorA;
+        private double _valorB;
+
         private ICalculadora _calculadora;
         public Processador(ICalculadora calculadora)
         {
             _calculadora = calculadora;
+            InformarValores();            
+        }
+
+        private void InformarValores()
+        {
+            do
+            {
+                Console.WriteLine("Digite o valor de A:");
+            } while (!Double.TryParse(Console.ReadLine(), out _valorA));
+
+            do
+            {
+                Console.WriteLine("Digite o valor de B:");
+            } while (!Double.TryParse(Console.ReadLine(), out _valorB));
+
+            _calculadora.ValorA = _valorA;
+            _calculadora.ValorB = _valorB;
         }
 
         private void ExibirResultado(string opcao) 
@@ -45,8 +65,9 @@ namespace Exerc1_Calculadora.Servicos
             Console.WriteLine("2 - Faça uma subtração do valor A - B");
             Console.WriteLine("3 - Divida o valor B por A");
             Console.WriteLine("4 - Multiplique o valor A por B");
-            Console.WriteLine("5 - Imprima os valores de entrada, informado se o número é par ou ímpar");            
-            Console.WriteLine("6 - Sair");            
+            Console.WriteLine("5 - Imprima os valores de entrada, informado se o número é par ou ímpar");
+            Console.WriteLine("6 - Digitar novos valores");
+            Console.WriteLine("7 - Sair");            
 
             Console.WriteLine("Digite o número da opção desejada:");
             string sOpcao = Console.ReadLine();
@@ -73,8 +94,12 @@ namespace Exerc1_Calculadora.Servicos
                     Console.WriteLine("Opção 5 - Resultado: A é " + _calculadora.DescricaoValorA + " e B é " + _calculadora.DescricaoValorB);
                     Console.WriteLine("");
                     ExibirDadosProcessamento();
-                    break;                
+                    break;
                 case "6":
+                    InformarValores();
+                    ExibirDadosProcessamento();
+                    break;
+                case "7":
                     Environment.Exit(1);
                     break;
                 default:
