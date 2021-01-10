@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Exerc1_Calculadora.Entidades
+﻿namespace Exerc1_Calculadora.Entidades
 {
     public interface ICalculadora
     {

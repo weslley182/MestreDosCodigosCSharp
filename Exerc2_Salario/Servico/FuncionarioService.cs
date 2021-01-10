@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using Exerc2_Salario.Entidade;
 
 namespace Exerc2_Salario.Servico

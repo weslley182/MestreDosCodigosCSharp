@@ -1,5 +1,4 @@
 ﻿using Exerc2_Salario.Servico;
-using System;
 
 namespace Exerc2_Salario
 {
