@@ -33,5 +33,12 @@ Respostas e perguntas: <a href = "https://github.com/weslley182/MestreDosCodigos
   </ul>
 <h2>Exercício 3 - Exerc3_Multiplos3</h2>
 <li>Faça uma aplicação que imprima todos os múltiplos de 3, entre 1 e 100. Utilize a repetição while.</li>
+<h2>Exercício 4 - Exerc4_Alunos</h2>
+<li>Faça uma aplicação que receba N alunos com suas respectivas notas. Use foreach para a estrutura de repetição.</li>
+  <ul>
+  <li>Crie um objeto Alunos.</li>
+  <li>Armazene os alunos em uma lista.</li>
+  <li>Imprima todos os alunos com médias superiores a 7.</li>
+  </ul>
   
 </ol>
