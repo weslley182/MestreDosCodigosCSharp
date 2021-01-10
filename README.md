@@ -12,3 +12,24 @@
 </ul>
 
 Respostas e perguntas: <a href = "https://github.com/weslley182/MestreDosCodigosCSharp/blob/master/Respostas.md">clique aqui</a>
+
+<h1>Trabalhando no Console</h1>
+<ol>
+<h2>Exercício 1 - Exerc1 - Calculadora</h2>
+<li>Crie uma aplicação, que receba os valores A e B. Mostre de forma simples, como utilizar variáveis e manipular dados.</li>
+  <ul>
+    <li>Some esses 2 valores</li>
+    <li>Faça uma subtração do valor A - B</li>
+    <li>Divida o valor B por A</li>
+    <li>Multiplique o valor A por B</li>
+    <li>Imprima os valores de entrada, informado se o número é par ou impar</li>
+    <li>Imprima todos os resultados no console, de forma que o usuário escolha a ação desejada.</li>
+  </ul>
+<h2>Exercício 2 - Exerc2_Salario</h2>  
+<li>Crie uma aplicação que receba nome e salário de N funcionários. Utilize a repetição for e while.</li>
+  <ul>
+    <li>Imprima o maior salário.</li>
+    <li>Imprima o menor salário.</li>
+  </ul>
+  
+</ol>
