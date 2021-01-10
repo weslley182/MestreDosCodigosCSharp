@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Exerc2_Salario.Servico;
+using System;
 
 namespace Exerc2_Salario
 {
@@ -6,7 +7,8 @@ namespace Exerc2_Salario
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            FuncionarioService serv = new FuncionarioService();
+            serv.ApresentarFuncionarios();
         }
     }
 }
