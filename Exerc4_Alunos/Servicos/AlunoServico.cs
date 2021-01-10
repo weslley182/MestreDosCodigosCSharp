@@ -12,7 +12,11 @@ namespace Exerc4_Alunos.Servicos
         {
             foreach(Aluno aluno in _listaAlunos)
             {
-                Console.WriteLine(aluno);
+                if(aluno.CalcularMedia() > 7) 
+                {
+                    Console.WriteLine($"Alunos com media acima de 7: {aluno}");
+                }
+                
             }
         }
 
