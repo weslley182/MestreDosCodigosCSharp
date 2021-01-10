@@ -31,5 +31,7 @@ Respostas e perguntas: <a href = "https://github.com/weslley182/MestreDosCodigos
     <li>Imprima o maior salário.</li>
     <li>Imprima o menor salário.</li>
   </ul>
+<h2>Exercício 3 - Exerc3_Multiplos3</h2>
+<li>Faça uma aplicação que imprima todos os múltiplos de 3, entre 1 e 100. Utilize a repetição while.</li>
   
 </ol>
