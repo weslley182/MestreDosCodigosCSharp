@@ -36,9 +36,15 @@ Respostas e perguntas: <a href = "https://github.com/weslley182/MestreDosCodigos
 <h2>Exercício 4 - Exerc4_Alunos</h2>
 <li>Faça uma aplicação que receba N alunos com suas respectivas notas. Use foreach para a estrutura de repetição.</li>
   <ul>
-  <li>Crie um objeto Alunos.</li>
-  <li>Armazene os alunos em uma lista.</li>
-  <li>Imprima todos os alunos com médias superiores a 7.</li>
+    <li>Crie um objeto Alunos.</li>
+    <li>Armazene os alunos em uma lista.</li>
+    <li>Imprima todos os alunos com médias superiores a 7.</li>
   </ul>
-  
+<h2>Exercício 5 - Exerc5_Bhaskara</h2>
+<li>Crie uma aplicação que calcule a fórmula de Bhaskara.</li>
+  <ul>
+    <li>Receba os valores a, b, c.</li>
+    <li>Imprima os resultados R1 e R2.</li>
+    <li>Use a biblioteca MATH.</li>
+  </ul>
 </ol>
