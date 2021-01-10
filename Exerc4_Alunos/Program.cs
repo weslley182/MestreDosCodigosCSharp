@@ -1,4 +1,4 @@
-﻿using System;
+﻿using Exerc4_Alunos.Servicos;
 
 namespace Exerc4_Alunos
 {
@@ -6,7 +6,9 @@ namespace Exerc4_Alunos
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            AlunoServico serv = new AlunoServico();
+            serv.RealizarEntradaDeAlunos();
+            serv.ApresentarMediasDosAlunos();
         }
     }
 }
