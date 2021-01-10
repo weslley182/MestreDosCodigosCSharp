@@ -12,7 +12,7 @@ namespace Exerc3_Multiplos3.Servico
             _valor = multiplo;
         }
 
-        private bool TestarEhMultimplo(int contador)
+        private bool TestarEhMultiplo(int contador)
         {
             return (contador % _valor == 0);
         }
@@ -22,7 +22,7 @@ namespace Exerc3_Multiplos3.Servico
             int nContador = 1;
             do
             {
-                if (TestarEhMultimplo(nContador))
+                if (TestarEhMultiplo(nContador))
                 {
                     Console.WriteLine(nContador);
                 }
