@@ -15,7 +15,7 @@ Respostas e perguntas: <a href = "https://github.com/weslley182/MestreDosCodigos
 
 <h1>Trabalhando no Console</h1>
 <ol>
-<h2>Exercício 1 - Exerc1 - Calculadora</h2>
+<h2>Exercício 1 - Exerc1_Calculadora</h2>
 <li>Crie uma aplicação, que receba os valores A e B. Mostre de forma simples, como utilizar variáveis e manipular dados.</li>
   <ul>
     <li>Some esses 2 valores</li>
