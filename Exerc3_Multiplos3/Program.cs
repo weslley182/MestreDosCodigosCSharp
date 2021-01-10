@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Exerc3_Multiplos3.Servico;
+using System;
 
 namespace Exerc3_Multiplos3
 {
@@ -6,7 +7,8 @@ namespace Exerc3_Multiplos3
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            MultiplosService mult = new MultiplosService(3);
+            mult.MostrarMultiplosAteh100();
         }
     }
 }
