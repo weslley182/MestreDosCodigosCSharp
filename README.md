@@ -104,6 +104,11 @@ Respostas e perguntas: <a href = "https://github.com/weslley182/MestreDosCodigos
             <li>Trocar para um canal indicado.</li>
             <li>Consultar o valor do volume de som e o canal selecionado.</li>
             <li>Imprima os dados via console.</li>
-        </ul>
-            
+        </ul>            
 </ol>    
+<h1>Trabalhando com testes<h1>
+ <ol>
+    <li>Quais os principais frameworks que podemos usar no desenvolvimento de testes?</li>
+    R: MsTest, NUnit, XUnit
+    <li>Escolha dois frameworks e faça testes unitários para pelo menos dois exercícios em cada framework.</li>
+</ol>
