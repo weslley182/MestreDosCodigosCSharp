@@ -74,6 +74,7 @@ Respostas e perguntas: <a href = "https://github.com/weslley182/MestreDosCodigos
 
 <h1>Utilizando POO(pasta de solução UtilizandoPOO)</h1>
 <ol>
+    <li>Respostas e perguntas: <a href = "https://github.com/weslley182/MestreDosCodigosCSharp/blob/master/Respostas.md">clique aqui</a></li>
     <h2>NOME PROJETO 2</h2>
     <li>Crie uma classe para representar uma pessoa:</li>
         <ul>
