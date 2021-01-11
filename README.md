@@ -52,5 +52,22 @@ Respostas e perguntas: <a href = "https://github.com/weslley182/MestreDosCodigos
     <h2>Execício 7 - Exerc7_SomaPares</h2>
     <li>Faça uma aplicação ler 4 números inteiros e calcular a soma dos que forem pares.</li>  
     <h2>Execício 8 - Exerc8_ListaOrdem</h2>
-    <li>Faça uma aplicação ler N valores decimais, imprima os valores em ordem crescente e decrescente..</li>  
+    <li>Faça uma aplicação ler N valores decimais, imprima os valores em ordem crescente e decrescente.</li>  
+    <h2>Execício 9 - Exerc9_LINQ</h2>
+    <li>Utilizando a biblioteca LINQ crie no console e execute:</li>
+        <ul>
+            <li>Crie uma lista que receba inteiros.</li>
+            <li>Imprimir todos os números da lista.</li>
+            <li>Imprimir todos os números da lista na ordem crescente.</li>
+            <li>Imprimir todos os números da lista na ordem decrescente.</li>
+            <li>Imprima apenas o primeiro número da lista.</li>
+            <li>Imprima apenas o ultimo número da lista.</li>
+            <li>Insira um número no início da lista.</li>
+            <li>Insira um número no final da lista.</li>
+            <li>Remova o primeiro número.</li>
+            <li>Remova o último número.</li>
+            <li>Retorne apenas os números pares.</li>
+            <li>Retorne apenas o número informado.</li>
+            <li>Transforme todos os números da lista em um Array.</li>
+        </ul>
 </ol>
