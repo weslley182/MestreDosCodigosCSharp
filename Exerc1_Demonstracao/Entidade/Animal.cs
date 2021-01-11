@@ -6,10 +6,19 @@ namespace Exerc1_Demonstracao.Entidade
 {
     abstract public class Animal
     {
-        public int Tamanho { get; set; }
-        public int Peso { get; set; }
-        public string Cor { get; set; }
+        private string _nome;        
         abstract public void Falar();
+
+        public string GetNome()
+        {
+            return _nome;
+        }
+
+        public void SetNome(string valor)
+        {
+            _nome = valor;
+        }
+
     }
 
 

@@ -10,10 +10,12 @@ namespace Exerc1_Demonstracao
         {
             //Exemplo de polimorfismo
             Animal cachorro = new Cachorro();
+            cachorro.SetNome("Thor");
             cachorro.Falar();
 
 
             Animal gato = new Gato();
+            gato.SetNome("Frodo");
             gato.Falar();
         }
 
