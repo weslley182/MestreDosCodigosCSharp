@@ -11,7 +11,7 @@
 <li>Com o projeto definido, vá no menu "Depurar > Iniciar sem depurar"</li>
 </ul>
 
-Respostas e perguntas: <a href = "https://github.com/weslley182/MestreDosCodigosCSharp/blob/master/Respostas.md">clique aqui</a>
+Respostas e perguntas: <a href = "https://github.com/weslley182/MestreDosCodigosCSharp/blob/master/Respostas1.md">clique aqui</a>
 
 <h1>Trabalhando no Console(pasta de solução TrabalhandoNoConsole)</h1>
 <ol>
@@ -74,7 +74,7 @@ Respostas e perguntas: <a href = "https://github.com/weslley182/MestreDosCodigos
 
 <h1>Utilizando POO(pasta de solução UtilizandoPOO)</h1>
 <ol>
-    <li>Respostas e perguntas: <a href = "https://github.com/weslley182/MestreDosCodigosCSharp/blob/master/Respostas.md">clique aqui</a></li>
+    <li>Respostas e perguntas: <a href = "https://github.com/weslley182/MestreDosCodigosCSharp/blob/master/Respostas2.md">clique aqui</a></li>
     <h2>Exercício 2 - Exerc2_Pessoa</h2>
     <li>Crie uma classe para representar uma pessoa:</li>
         <ul>
