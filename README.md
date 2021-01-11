@@ -51,4 +51,6 @@ Respostas e perguntas: <a href = "https://github.com/weslley182/MestreDosCodigos
     <li>Crie uma aplicação, que demonstre a diferença entre REF e OUT.</li>
     <h2>Execício 7 - Exerc7_SomaPares</h2>
     <li>Faça uma aplicação ler 4 números inteiros e calcular a soma dos que forem pares.</li>  
+    <h2>Execício 8 - Exerc8_ListaOrdem</h2>
+    <li>Faça uma aplicação ler N valores decimais, imprima os valores em ordem crescente e decrescente..</li>  
 </ol>
