@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exerc9_LINQ", "Exerc9_LINQ\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exerc2_Pessoa", "Exerc2_Pessoa\Exerc2_Pessoa.csproj", "{13B49EF2-BD3B-4E41-9121-3F85810B5AEC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exerc3_AppBancario", "Exerc3_AppBancario\Exerc3_AppBancario.csproj", "{226A3F83-B9DF-4F38-9B72-6FAEDECDF9FB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -73,6 +75,10 @@ Global
 		{13B49EF2-BD3B-4E41-9121-3F85810B5AEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13B49EF2-BD3B-4E41-9121-3F85810B5AEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13B49EF2-BD3B-4E41-9121-3F85810B5AEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{226A3F83-B9DF-4F38-9B72-6FAEDECDF9FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{226A3F83-B9DF-4F38-9B72-6FAEDECDF9FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{226A3F83-B9DF-4F38-9B72-6FAEDECDF9FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{226A3F83-B9DF-4F38-9B72-6FAEDECDF9FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -88,6 +94,7 @@ Global
 		{CBD0361C-5A33-4731-AC19-47F12904D623} = {86C93D75-1C52-47E4-9867-1593715CE674}
 		{28266709-B07C-49F6-AC67-3C49C00BA18B} = {86C93D75-1C52-47E4-9867-1593715CE674}
 		{13B49EF2-BD3B-4E41-9121-3F85810B5AEC} = {D216D5CF-A459-4AD2-B2EB-051E531AFDCC}
+		{226A3F83-B9DF-4F38-9B72-6FAEDECDF9FB} = {D216D5CF-A459-4AD2-B2EB-051E531AFDCC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EB3521FB-3FBB-4647-B159-7F6C3548204C}
