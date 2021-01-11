@@ -75,7 +75,7 @@ Respostas e perguntas: <a href = "https://github.com/weslley182/MestreDosCodigos
 <h1>Utilizando POO(pasta de solução UtilizandoPOO)</h1>
 <ol>
     <li>Respostas e perguntas: <a href = "https://github.com/weslley182/MestreDosCodigosCSharp/blob/master/Respostas.md">clique aqui</a></li>
-    <h2>NOME PROJETO 2</h2>
+    <h2>Exercício 2 - Exerc2_Pessoa</h2>
     <li>Crie uma classe para representar uma pessoa:</li>
         <ul>
             <li>Crie os atributos privados de nome, data de nascimento e altura.</li>
@@ -83,7 +83,7 @@ Respostas e perguntas: <a href = "https://github.com/weslley182/MestreDosCodigos
             <li>Crie um método para calcular a idade da pessoa.</li>
             <li>Imprima os dados via console.</li>
         </ul>            
-    <h2>NOME PROJETO 3</h2>
+    <h2>Exercício 3 - Exerc3_AppBancario</h2>
     <li>Faça uma aplicação bancária.</li>
         <ul>
             <li>Crie uma classe abstrata ContaBancaria que contém como atributos, NumeroDaConta e Saldo.
@@ -95,7 +95,7 @@ Respostas e perguntas: <a href = "https://github.com/weslley182/MestreDosCodigos
             <li>Crie uma interface Imprimivel que declara um método MostrarDados, implemente em ambas as contas e imprima os dados em cada uma.
                 Via console, abra 2 contas de cada tipo e execute todas as operações.</li>
         </ul>
-    <h2>NOME PROJETO 4</h2>
+    <h2>Exercício 4</h2>
     <li>Crie uma classe Televisao e uma classe ControleRemoto que pode controlar o volume e trocar os canais da televisão. O controle permite:</li>
         <ul>
             <li>Aumentar ou diminuir a potência do volume de som em uma unidade de cada vez.</li>
