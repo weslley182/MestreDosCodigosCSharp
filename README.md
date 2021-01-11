@@ -109,6 +109,6 @@ Respostas e perguntas: <a href = "https://github.com/weslley182/MestreDosCodigos
 <h1>Trabalhando com testes</h1>
  <ol>
     <li>Quais os principais frameworks que podemos usar no desenvolvimento de testes?</li>
-    R: MsTest, NUnit, XUnit
+    <em>R: MsTest, NUnit, XUnit</em>
     <li>Escolha dois frameworks e faça testes unitários para pelo menos dois exercícios em cada framework.</li>
 </ol>
