@@ -1,7 +1,5 @@
 ﻿using Exerc1_Demonstracao.Entidade.Caracteristica;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Exerc1_Demonstracao.Entidade
 {
