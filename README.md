@@ -74,12 +74,34 @@ Respostas e perguntas: <a href = "https://github.com/weslley182/MestreDosCodigos
 
 <h1>Utilizando POO(pasta de solução UtilizandoPOO)</h1>
 <ol>
-    <h2>NOME PROJETO</h2>
+    <h2>NOME PROJETO 2</h2>
     <li>Crie uma classe para representar uma pessoa:</li>
         <ul>
             <li>Crie os atributos privados de nome, data de nascimento e altura.</li>
             <li>Crie os métodos públicos necessários para sets e gets e também um método para imprimir todos dados de uma pessoa.</li>
             <li>Crie um método para calcular a idade da pessoa.</li>
             <li>Imprima os dados via console.</li>
-        <ul/>    
+        </ul>            
+    <h2>NOME PROJETO 3</h2>
+    <li>Faça uma aplicação bancária.</li>
+        <ul>
+            <li>Crie uma classe abstrata ContaBancaria que contém como atributos, NumeroDaConta e Saldo.
+                E como métodos abstratos Sacar e Depositar que recebem um parâmetro do tipo double.</li>
+            <li>Crie as classes ContaCorrente e ContaEspecial que herdam da ContaBancaria.</li>
+            <li>A ContaCorrente possui um atributo taxaDeOperacao que é descontado sempre que um saque e um depósito são feitos.</li>
+            <li>A ContaEspecial possui um atributo Limite que dá credito a mais para o correntista caso ele precise sacar mais que o saldo. 
+                Neste caso, o saldo pode ficar negativo desde que <li>não ultrapasse o limite. Contudo isso não pode acontecer na classe ContaCorrente.</li>
+            <li>Crie uma interface Imprimivel que declara um método MostrarDados, implemente em ambas as contas e imprima os dados em cada uma.
+                Via console, abra 2 contas de cada tipo e execute todas as operações.</li>
+        </ul>
+    <h2>NOME PROJETO 4</h2>
+    <li>Crie uma classe Televisao e uma classe ControleRemoto que pode controlar o volume e trocar os canais da televisão. O controle permite:</li>
+        <ul>
+            <li>Aumentar ou diminuir a potência do volume de som em uma unidade de cada vez.</li>
+            <li>Aumentar e diminuir o número do canal em uma unidade.</li>
+            <li>Trocar para um canal indicado.</li>
+            <li>Consultar o valor do volume de som e o canal selecionado.</li>
+            <li>Imprima os dados via console.</li>
+        </ul>
+            
 </ol>    
