@@ -7,6 +7,9 @@ namespace Exerc5_Bhaskara
     {
         static void Main(string[] args)
         {
+
+            //1,8, -9 result = 1 e -9
+
             int nValorA;
             int nValorB;
             int nValorC;
