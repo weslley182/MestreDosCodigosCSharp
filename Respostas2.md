@@ -27,11 +27,8 @@
   <ul>
     <li>IDisposable serve principalmente a liberar recursos não gerenciados utilizados em nosso código, 
     como conexões com banco de dados, arquivos e hardwares externos. Estes devem ser liberados manualmente.</li>
-
     <li>IComparable é usado para fornecer uma ordem de classificação padrão para seus objetos.</li>
-
     <li>ICloneable dá suporte à clonagem, que cria uma nova instância de uma classe com o mesmo valor de uma instância existente.</li>
-
     <li>IEnumerable permite iterarmos por uma coleção.</li>
   </ul>
   <p>
