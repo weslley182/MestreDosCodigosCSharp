@@ -24,8 +24,7 @@ namespace Exerc1_Demonstracao.Inferfaces
             }
 
             Funcionario outro = obj as Funcionario;
-            //return Salario.CompareTo(outro.Salario);
-            return Nome.CompareTo(outro.Nome);
+            return Salario.CompareTo(outro.Salario);            
         }
 
         public override string ToString()
