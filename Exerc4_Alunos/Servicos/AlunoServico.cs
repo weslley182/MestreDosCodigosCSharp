@@ -15,8 +15,7 @@ namespace Exerc4_Alunos.Servicos
                 if(aluno.CalcularMedia() > 7) 
                 {
                     Console.WriteLine($"Alunos com media acima de 7: {aluno}");
-                }
-                
+                }                
             }
         }
 
