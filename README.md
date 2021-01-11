@@ -47,4 +47,6 @@ Respostas e perguntas: <a href = "https://github.com/weslley182/MestreDosCodigos
     <li>Imprima os resultados R1 e R2.</li>
     <li>Use a biblioteca MATH.</li>
   </ul>
+<h2>Execício 6 - Exerc6_Diferenca</h2>
+<li>Crie uma aplicação, que demonstre a diferença entre REF e OUT.</li>
 </ol>
