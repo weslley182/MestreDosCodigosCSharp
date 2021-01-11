@@ -21,7 +21,7 @@
   <li><b>Quando usar uma classe abstrata e quando devo usar uma interface?</b></li>
   <em>R: Classes abstratas e interfaces podem ser utilizadas em situações que várias classes possuem métodos em comum, 
   mas que também possuem suas particularidades. Então elas poderiam herdar de uma classes abstrata ou de interfaces. 
-  Seria como utilizar uma herança multipla, eviando a Herança Diamante.</em>
+  Seria como utilizar uma herança multipla, evitando a Herança Diamante.</em>
   <p>
   <li><b>O que faz as interfaces IDisposable, IComparable, ICloneable e IEnumerable?</b></li>
   <ul>
