@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exerc4_Alunos", "Exerc4_Alu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exerc5_Bhaskara", "Exerc5_Bhaskara\Exerc5_Bhaskara.csproj", "{71AD54DE-FEB4-46E4-8F55-7F2C0E8D9F72}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exerc6_Diferenca", "Exerc6_Diferenca\Exerc6_Diferenca.csproj", "{E7DB62D2-0C76-4EE1-AAFF-5A0EA18CCF2A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{71AD54DE-FEB4-46E4-8F55-7F2C0E8D9F72}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71AD54DE-FEB4-46E4-8F55-7F2C0E8D9F72}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71AD54DE-FEB4-46E4-8F55-7F2C0E8D9F72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7DB62D2-0C76-4EE1-AAFF-5A0EA18CCF2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7DB62D2-0C76-4EE1-AAFF-5A0EA18CCF2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7DB62D2-0C76-4EE1-AAFF-5A0EA18CCF2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7DB62D2-0C76-4EE1-AAFF-5A0EA18CCF2A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
