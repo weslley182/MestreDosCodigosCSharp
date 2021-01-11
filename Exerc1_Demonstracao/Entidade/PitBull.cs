@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Exerc1_Demonstracao.Entidade.Caracteristica;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Exerc1_Demonstracao.Entidade
 {
-    public class PitBull: Cachorro
+    public class PitBull: Cachorro, ITerritorial
     {
         private int _ferocidade;
         public void LutarComOutrosCaes()
@@ -13,6 +14,7 @@ namespace Exerc1_Demonstracao.Entidade
             AdicionarFerocidade();
             Falar();
             Falar();
+            AdicionarTerritorial();
         }
 
         public void AdicionarFerocidade()
@@ -23,6 +25,11 @@ namespace Exerc1_Demonstracao.Entidade
         public void VisualizarOutroCao()
         {
             Console.WriteLine("Encontrou outro cão.");
+        }
+
+        public void AdicionarTerritorial()
+        {
+            Console.WriteLine("Aqui ninguém entra, e se entrar morre.");
         }
     }
 }

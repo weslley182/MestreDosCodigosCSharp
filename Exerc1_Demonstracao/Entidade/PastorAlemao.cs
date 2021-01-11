@@ -1,15 +1,21 @@
-﻿using System;
+﻿using Exerc1_Demonstracao.Entidade.Caracteristica;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Exerc1_Demonstracao.Entidade
 {
-    public class PastorAlemao: Cachorro
+    public class PastorAlemao: Cachorro, ITerritorial
     {
         public void ProtegerCasa()
         {
             Falar();
-            Console.WriteLine("Vigília constante");
+            AdicionarTerritorial();
+        }
+
+        public void AdicionarTerritorial()
+        {
+            Console.WriteLine("Aqui ninguém entra.");
         }
     }
 }
