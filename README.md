@@ -13,7 +13,7 @@
 
 Respostas e perguntas: <a href = "https://github.com/weslley182/MestreDosCodigosCSharp/blob/master/Respostas.md">clique aqui</a>
 
-<h1>Trabalhando no Console</h1>
+<h1>Trabalhando no Console(pasta de solução TrabalhandoNoConsole)</h1>
 <ol>
     <h2>Exercício 1 - Exerc1_Calculadora</h2>
     <li>Crie uma aplicação, que receba os valores A e B. Mostre de forma simples, como utilizar variáveis e manipular dados.</li>
