@@ -34,6 +34,7 @@ namespace Exerc1_Demonstracao.Servico
             {
                 Console.WriteLine(func);
             }
+            Console.WriteLine(String.Empty);
         }
     }
 }
