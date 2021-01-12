@@ -1,4 +1,5 @@
 ﻿using System;
+using Exerc6_Diferenca.Servico;
 
 namespace Exerc6_Diferenca
 {
@@ -13,22 +14,11 @@ namespace Exerc6_Diferenca
 
             int nValorRef = 10;
             int nValorOut;
+            CalculoOutRef serv = new CalculoOutRef();
 
-            // ref só pode ser utilizado com variáveis iniciadas
-            static void MetodoUtilizandoRef(ref int paramX)
-            {
-                paramX += 5;
-            }
-
-            // o out não precisa ser iniciado mas deve ser alterado
-            static void MetodoUtilizandoOut(out int paramX)
-            {                                
-                paramX = 5;                
-            }
-
-            MetodoUtilizandoRef(ref nValorRef);
+            serv.MetodoUtilizandoRef(ref nValorRef);
             
-            MetodoUtilizandoOut(out nValorOut);
+            serv.MetodoUtilizandoOut(out nValorOut);
 
             Console.WriteLine($"Método utilizando ref obteve a saída {nValorRef}");
             Console.WriteLine($"Método utilizando out obteve a saída {nValorOut}");

@@ -37,7 +37,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exerc1_CalculadoraTest", "U
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exerc3_Multiplos3Test", "ExemploOli\Exerc3_Multiplos3Test.csproj", "{1F8C73AB-BD1F-44B3-86AB-78585E9920EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exerc5_BhaskaraTest", "Exerc5_BhaskaraTest\Exerc5_BhaskaraTest.csproj", "{22D01974-7A56-40C9-86AB-2E2D865EAECA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exerc5_BhaskaraTest", "Exerc5_BhaskaraTest\Exerc5_BhaskaraTest.csproj", "{22D01974-7A56-40C9-86AB-2E2D865EAECA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exerc7_SomaParesTest", "Exerc7_SomaParesTest\Exerc7_SomaParesTest.csproj", "{D74ED040-5CF3-46AE-9AE8-60C50EC14F62}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -109,6 +111,10 @@ Global
 		{22D01974-7A56-40C9-86AB-2E2D865EAECA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22D01974-7A56-40C9-86AB-2E2D865EAECA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22D01974-7A56-40C9-86AB-2E2D865EAECA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D74ED040-5CF3-46AE-9AE8-60C50EC14F62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D74ED040-5CF3-46AE-9AE8-60C50EC14F62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D74ED040-5CF3-46AE-9AE8-60C50EC14F62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D74ED040-5CF3-46AE-9AE8-60C50EC14F62}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -130,6 +136,7 @@ Global
 		{71511790-AA9E-48BE-8B5E-D9441B122F58} = {86C93D75-1C52-47E4-9867-1593715CE674}
 		{1F8C73AB-BD1F-44B3-86AB-78585E9920EE} = {86C93D75-1C52-47E4-9867-1593715CE674}
 		{22D01974-7A56-40C9-86AB-2E2D865EAECA} = {86C93D75-1C52-47E4-9867-1593715CE674}
+		{D74ED040-5CF3-46AE-9AE8-60C50EC14F62} = {86C93D75-1C52-47E4-9867-1593715CE674}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EB3521FB-3FBB-4647-B159-7F6C3548204C}

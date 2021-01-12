@@ -5,12 +5,16 @@ using System.Text;
 namespace Exerc7_SomaPares.Servico
 {
     public class CalculaSomaParServico
-    {
-        List<int> lista = new List<int>();
+    {        
+        public List<int> Lista { get; set; }
 
         private int _valor;
+        public int ValorTotal { get; set; }
 
-        private int _valorTotal = 0;
+        public CalculaSomaParServico()
+        {
+            Lista = new List<int>();
+        }
         private bool TestarEhPar(int numero)
         {
             return (numero % 2 == 0);
@@ -18,11 +22,11 @@ namespace Exerc7_SomaPares.Servico
 
         public void RealizarCalculo()
         {
-            foreach (int numero in lista)
+            foreach (int numero in Lista)
             {
                 if (TestarEhPar(numero))
                 {
-                    _valorTotal += numero;
+                    ValorTotal += numero;
                 }
             }
         }
@@ -36,13 +40,13 @@ namespace Exerc7_SomaPares.Servico
                     Console.WriteLine($"Entre com o valor #{i}:");
                 } while (!int.TryParse(Console.ReadLine(), out _valor));
 
-                lista.Add(_valor);
+                Lista.Add(_valor);
             }
         }
 
         public override string ToString()
         {
-            return $"Soma dos valores pares é: {_valorTotal}";
+            return $"Soma dos valores pares é: {ValorTotal}";
         }
     }
 }
