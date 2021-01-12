@@ -9,29 +9,33 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exerc3_Multiplos3", "Exerc3
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exerc1_Calculadora", "Exerc1_Calculadora\Exerc1_Calculadora.csproj", "{183B9AB9-C185-4CC5-A2DB-3CC7A118FD16}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exerc4_Alunos", "Exerc4_Alunos\Exerc4_Alunos.csproj", "{1E39510E-E335-483E-A79E-F2C3182451A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exerc4_Alunos", "Exerc4_Alunos\Exerc4_Alunos.csproj", "{1E39510E-E335-483E-A79E-F2C3182451A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exerc5_Bhaskara", "Exerc5_Bhaskara\Exerc5_Bhaskara.csproj", "{71AD54DE-FEB4-46E4-8F55-7F2C0E8D9F72}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exerc5_Bhaskara", "Exerc5_Bhaskara\Exerc5_Bhaskara.csproj", "{71AD54DE-FEB4-46E4-8F55-7F2C0E8D9F72}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exerc6_Diferenca", "Exerc6_Diferenca\Exerc6_Diferenca.csproj", "{E7DB62D2-0C76-4EE1-AAFF-5A0EA18CCF2A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exerc6_Diferenca", "Exerc6_Diferenca\Exerc6_Diferenca.csproj", "{E7DB62D2-0C76-4EE1-AAFF-5A0EA18CCF2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exerc7_SomaPares", "Exerc7_SomaPares\Exerc7_SomaPares.csproj", "{5D60D217-D661-4CF1-8097-C310CE06F1F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exerc7_SomaPares", "Exerc7_SomaPares\Exerc7_SomaPares.csproj", "{5D60D217-D661-4CF1-8097-C310CE06F1F5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TrabalhandoNoConsole", "TrabalhandoNoConsole", "{86C93D75-1C52-47E4-9867-1593715CE674}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UtilizandoPOO", "UtilizandoPOO", "{D216D5CF-A459-4AD2-B2EB-051E531AFDCC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exerc8_ListaOrdem", "Exerc8_ListaOrdem\Exerc8_ListaOrdem.csproj", "{CBD0361C-5A33-4731-AC19-47F12904D623}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exerc8_ListaOrdem", "Exerc8_ListaOrdem\Exerc8_ListaOrdem.csproj", "{CBD0361C-5A33-4731-AC19-47F12904D623}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exerc9_LINQ", "Exerc9_LINQ\Exerc9_LINQ.csproj", "{28266709-B07C-49F6-AC67-3C49C00BA18B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exerc9_LINQ", "Exerc9_LINQ\Exerc9_LINQ.csproj", "{28266709-B07C-49F6-AC67-3C49C00BA18B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exerc2_Pessoa", "Exerc2_Pessoa\Exerc2_Pessoa.csproj", "{13B49EF2-BD3B-4E41-9121-3F85810B5AEC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exerc2_Pessoa", "Exerc2_Pessoa\Exerc2_Pessoa.csproj", "{13B49EF2-BD3B-4E41-9121-3F85810B5AEC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exerc3_AppBancario", "Exerc3_AppBancario\Exerc3_AppBancario.csproj", "{226A3F83-B9DF-4F38-9B72-6FAEDECDF9FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exerc3_AppBancario", "Exerc3_AppBancario\Exerc3_AppBancario.csproj", "{226A3F83-B9DF-4F38-9B72-6FAEDECDF9FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exerc4_Televisao", "Exerc4_Televisao\Exerc4_Televisao.csproj", "{D9752AB8-7577-4D60-A16A-59E2B832CD3E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exerc4_Televisao", "Exerc4_Televisao\Exerc4_Televisao.csproj", "{D9752AB8-7577-4D60-A16A-59E2B832CD3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exerc1_Demonstracao", "Exerc1_Demonstracao\Exerc1_Demonstracao.csproj", "{C675411F-7023-45E1-83D5-308BB108AA44}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exerc1_Demonstracao", "Exerc1_Demonstracao\Exerc1_Demonstracao.csproj", "{C675411F-7023-45E1-83D5-308BB108AA44}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exerc1_CalculadoraTest", "UnitTestProjectOliv8\Exerc1_CalculadoraTest.csproj", "{71511790-AA9E-48BE-8B5E-D9441B122F58}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exerc3_Multiplos3Test", "ExemploOli\Exerc3_Multiplos3Test.csproj", "{1F8C73AB-BD1F-44B3-86AB-78585E9920EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -91,6 +95,14 @@ Global
 		{C675411F-7023-45E1-83D5-308BB108AA44}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C675411F-7023-45E1-83D5-308BB108AA44}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C675411F-7023-45E1-83D5-308BB108AA44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71511790-AA9E-48BE-8B5E-D9441B122F58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71511790-AA9E-48BE-8B5E-D9441B122F58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71511790-AA9E-48BE-8B5E-D9441B122F58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71511790-AA9E-48BE-8B5E-D9441B122F58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F8C73AB-BD1F-44B3-86AB-78585E9920EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F8C73AB-BD1F-44B3-86AB-78585E9920EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F8C73AB-BD1F-44B3-86AB-78585E9920EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F8C73AB-BD1F-44B3-86AB-78585E9920EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -109,6 +121,8 @@ Global
 		{226A3F83-B9DF-4F38-9B72-6FAEDECDF9FB} = {D216D5CF-A459-4AD2-B2EB-051E531AFDCC}
 		{D9752AB8-7577-4D60-A16A-59E2B832CD3E} = {D216D5CF-A459-4AD2-B2EB-051E531AFDCC}
 		{C675411F-7023-45E1-83D5-308BB108AA44} = {D216D5CF-A459-4AD2-B2EB-051E531AFDCC}
+		{71511790-AA9E-48BE-8B5E-D9441B122F58} = {86C93D75-1C52-47E4-9867-1593715CE674}
+		{1F8C73AB-BD1F-44B3-86AB-78585E9920EE} = {86C93D75-1C52-47E4-9867-1593715CE674}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EB3521FB-3FBB-4647-B159-7F6C3548204C}

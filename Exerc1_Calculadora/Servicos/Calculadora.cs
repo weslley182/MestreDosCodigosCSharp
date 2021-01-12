@@ -33,7 +33,7 @@ namespace Exerc1_Calculadora.Servicos
             return ValorB / ValorA;
         }
 
-        private bool TestarValorEhpar(double valor)
+        public bool TestarValorEhpar(double valor)
         {
             return (valor % 2 == 0);
         }

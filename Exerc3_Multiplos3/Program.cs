@@ -7,8 +7,13 @@ namespace Exerc3_Multiplos3
     {
         static void Main(string[] args)
         {
+            int nCont;
             MultiplosService mult = new MultiplosService(3);
-            mult.MostrarMultiplosAteh100();
+            mult.BuscarMultiplosAteh(100);
+            foreach(int numero in mult.Lista)
+            {
+                Console.WriteLine(numero);
+            }
         }
     }
 }
