@@ -1,5 +1,6 @@
 ﻿using Exerc5_Bhaskara.Servico;
 using System;
+using System.Globalization;
 
 namespace Exerc5_Bhaskara
 {
@@ -30,9 +31,12 @@ namespace Exerc5_Bhaskara
                 Console.WriteLine("Entre com o valor de C:");
             } while (!int.TryParse(Console.ReadLine(), out nValorC));
 
-            CalcularService calc = new CalcularService(nValorA, nValorB, nValorC);
+            CalcularService calc = new CalcularService(nValorA, nValorB, nValorC);            
             calc.CalcularFormula();
-            calc.MostrarResultado();
+            Console.WriteLine($"Valor de R1: {calc.R1.ToString("F2", CultureInfo.InvariantCulture)}");
+            Console.WriteLine($"Valor de R2: {calc.R2.ToString("F2", CultureInfo.InvariantCulture)}");
+            
+            
             
         }
     }
