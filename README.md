@@ -113,8 +113,8 @@ Respostas e perguntas: <a href = "https://github.com/weslley182/MestreDosCodigos
     <li>Escolha dois frameworks e faça testes unitários para pelo menos dois exercícios em cada framework.</li>
     <ol>
         <li>Exerc1_CalculadoraTest Utiliza MSTest</li>
-        <li>Exerc2_SalarioTest Utiliza MSTest</li>
-        <li>Exerc3_Multiplos3Test Utiliza xUnit</li>
-        <li>Exerc5_BhaskaraTest Utilzia xUnit</li>
+        <li>Exerc3_Multiplos3Test Utiliza MSTest</li>
+        <li>Exerc5_BhaskaraTest Utiliza xUnit</li>
+        <li>Exerc6_Diferenca Utilzia xUnit</li>
     </ol>
 </ol>
