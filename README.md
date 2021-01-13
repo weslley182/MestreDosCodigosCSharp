@@ -115,6 +115,6 @@ Respostas e perguntas: <a href = "https://github.com/weslley182/MestreDosCodigos
         <li>Exerc1_CalculadoraTest Utiliza MSTest</li>
         <li>Exerc3_Multiplos3Test Utiliza xUnit</li>
         <li>Exerc5_BhaskaraTest Utiliza xUnit</li>
-        <li>Exerc6_Diferenca Utilzia MSTest</li>
+        <li>Exerc7_SomaParesTest Utiliza MSTest</li>
     </ol>
 </ol>
