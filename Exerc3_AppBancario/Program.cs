@@ -8,6 +8,7 @@ namespace Exerc3_AppBancario
 
         static void Main(string[] args)
         {
+            Console.WriteLine("3 - Faça uma aplicação bancária.");
             RealizarAcaoContaCorrente();
             RealizarAcaoContaEspecial();
         }

@@ -7,6 +7,7 @@ namespace Exerc9_LINQ
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("9 - Utilizando a biblioteca LINQ crie no console e execute:");
             ListaService lista = new ListaService();
             lista.Executar();
         }

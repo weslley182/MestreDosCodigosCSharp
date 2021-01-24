@@ -7,7 +7,7 @@ namespace Exerc1_Calculadora
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Crie uma aplicação, que receba os valores A e B. Mostre de forma simples, como utilizar variáveis e manipular dados");
+            Console.WriteLine("1 - Crie uma aplicação, que receba os valores A e B. Mostre de forma simples, como utilizar variáveis e manipular dados");
             ExecutarCalculadora();
         }
 

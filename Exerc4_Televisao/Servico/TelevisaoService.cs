@@ -45,21 +45,21 @@ namespace Exerc4_Televisao.Servico
                     MostrarOpcoesDoControle();
                     break;
                 case "3":
-                    Console.WriteLine("{0}", Controle.AumentarNumeroCanal());
+                    Console.WriteLine(Controle.AumentarNumeroCanal());
                     MostrarOpcoesDoControle();
                     break;
                 case "4":
-                    Console.WriteLine("{0}", Controle.DiminuirNumeroCanal());
+                    Console.WriteLine(Controle.DiminuirNumeroCanal());
                     MostrarOpcoesDoControle();
                     break;
                 case "5":
                     Console.WriteLine("Qual número de canal?");
                     int numeroCanal = int.Parse(Console.ReadLine());
-                    Console.WriteLine("{0}", Controle.InformarNumeroCanal(numeroCanal));
+                    Console.WriteLine(Controle.InformarNumeroCanal(numeroCanal));
                     MostrarOpcoesDoControle();
                     break;
                 case "6":
-                    Console.WriteLine("{0}", Controle.ConsultarVolumeCanal());
+                    Console.WriteLine(Controle.ConsultarVolumeCanal());
                     MostrarOpcoesDoControle();
                     break;
                 case "7":

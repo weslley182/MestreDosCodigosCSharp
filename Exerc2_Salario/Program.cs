@@ -6,6 +6,7 @@ namespace Exerc2_Salario
     {
         static void Main(string[] args)
         {
+            System.Console.WriteLine("2 - Crie uma aplicação que receba nome e salário de N funcionários. Utilize a repetição for e while.");
             FuncionarioService serv = new FuncionarioService();
             serv.ApresentarFuncionarios();
         }

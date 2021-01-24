@@ -7,6 +7,7 @@ namespace Exerc2_Pessoa
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("2 - Crie uma classe para representar uma pessoa:");
             Console.WriteLine("Entre com os dados da Pessoa:");
 
             Console.WriteLine("Nome:");

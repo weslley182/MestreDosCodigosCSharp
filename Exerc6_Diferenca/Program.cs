@@ -8,7 +8,7 @@ namespace Exerc6_Diferenca
         static void Main(string[] args)
         {
             
-            Console.WriteLine("Crie uma aplicação, que demonstre a diferença entre REF e OUT.");            
+            Console.WriteLine("6 - Crie uma aplicação, que demonstre a diferença entre REF e OUT.");            
 
             Console.WriteLine("Variáveis nValorRef e nValorOut serão inicializadas com valor 10");
 
