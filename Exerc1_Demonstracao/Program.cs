@@ -40,7 +40,7 @@ namespace Exerc1_Demonstracao
 
             ITerritorial pit2 = new PitBull();
             Console.WriteLine("Segundo Pit Bull");
-            pit.AdicionarTerritorial();
+            pit2.AdicionarTerritorial();
 
             PastorAlemao pastor = new PastorAlemao();
             Console.WriteLine("Pastor alemão");

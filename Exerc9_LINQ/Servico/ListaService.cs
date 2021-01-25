@@ -7,7 +7,7 @@ namespace Exerc9_LINQ.Servico
 {
     public class ListaService
     {
-        private List<int> listaNumeros = new List<int>();
+        private readonly List<int> _listaNumeros = new List<int>();
 
         private const string sNUMERO = "Digite um número inteiro ou digite : Sair";
 
@@ -33,17 +33,15 @@ namespace Exerc9_LINQ.Servico
             {
                 Console.WriteLine(sNUMERO);
 
-                string valorDigitado;
-                int valorInteiro;
 
-                SolicitarNumeroValido(out valorDigitado, out valorInteiro);
+                SolicitarNumeroValido(out string valorDigitado, out int valorInteiro);
 
                 if (valorDigitado.ToUpper() == "SAIR")
                 {
                     break;
                 }                    
 
-                listaNumeros.Add(valorInteiro);
+                _listaNumeros.Add(valorInteiro);
             }
             
         }
@@ -62,7 +60,7 @@ namespace Exerc9_LINQ.Servico
 
         private void ApresentarListaOrdemPadrao()
         {
-            listaNumeros.ForEach(n => Console.Write(n));
+            _listaNumeros.ForEach(n => Console.Write(n));
             Console.WriteLine(String.Empty);
         }
         private void ImprimirNumerosListaOrdemInsercao()
@@ -74,7 +72,7 @@ namespace Exerc9_LINQ.Servico
         private void ImprimirNumerosListaOrdemCrescente()
         {
             Console.WriteLine("Apresentação da lista em ordem crescente.");
-            listaNumeros
+            _listaNumeros
                 .OrderBy(n => n)
                 .ToList()
                 .ForEach(n => Console.Write(n));
@@ -84,7 +82,7 @@ namespace Exerc9_LINQ.Servico
         private void ImprimirNumerosListaOrdemDecrescente()
         {
             Console.WriteLine("Apresentação da lista em ordem decrescente.");
-            listaNumeros
+            _listaNumeros
                 .OrderByDescending(n => n)
                 .ToList()
                 .ForEach(n =>Console.Write(n));
@@ -94,47 +92,43 @@ namespace Exerc9_LINQ.Servico
         private void ImprimirPrimeiroDaLista()
         {
             Console.WriteLine("Apresentação do primeiro número da lista.");
-            Console.Write(listaNumeros.First().ToString());
+            Console.Write(_listaNumeros.First().ToString());
             Console.WriteLine(String.Empty);
         }
 
         private void ImprimirUltimoDaLista()
         {
             Console.WriteLine("Apresentação do último número da lista.");
-            Console.Write(listaNumeros.Last().ToString());
+            Console.Write(_listaNumeros.Last().ToString());
             Console.WriteLine(String.Empty);
         }
         private void AdicionarNumeroInicioListaExibir()
         {
-            int valorInicio;
-            string sair;
 
             Console.WriteLine("Apresentação de lista inserindo número no início.");
 
-            SolicitarNumeroValido(out sair, out valorInicio);
+            SolicitarNumeroValido(out string sair, out int valorInicio);
             if (sair.ToUpper() == "SAIR")
             {
                 return;
             }
 
-            listaNumeros.Insert(0, valorInicio);
+            _listaNumeros.Insert(0, valorInicio);
 
             ApresentarListaOrdemPadrao();
         }
         private void AdicionarNumeroFinalListaExibir()
         {
-            int valorFinal;
-            string sair;
 
             Console.WriteLine("Apresentação de lista inserindo número no final.");
 
-            SolicitarNumeroValido(out sair, out valorFinal);
+            SolicitarNumeroValido(out string sair, out int valorFinal);
             if(sair.ToUpper() == "SAIR")
             {
                 return;
             }
 
-            listaNumeros.Add(valorFinal);
+            _listaNumeros.Add(valorFinal);
 
             ApresentarListaOrdemPadrao();            
         }
@@ -142,20 +136,20 @@ namespace Exerc9_LINQ.Servico
         private void RemoverPrimeiroNumeroListaExibir()
         {
             Console.WriteLine("Apresentação de lista removendo número inicial.");
-            listaNumeros.RemoveAt(0);
+            _listaNumeros.RemoveAt(0);
             ApresentarListaOrdemPadrao();
         }
         private void RemoverUltimoNumeroListaExibir()
         {
             Console.WriteLine("Apresentação de lista removendo número no final.");
-            listaNumeros.RemoveAt(listaNumeros.Count - 1);
+            _listaNumeros.RemoveAt(_listaNumeros.Count - 1);
             ApresentarListaOrdemPadrao();
         }
 
         private void ImprimirApenasNumerosPares()
         {
             Console.WriteLine("Apresentação de números pares da lista.");
-            listaNumeros
+            _listaNumeros
                 .Where(item => ((item % 2) == 0))
                 .ToList()
                 .ForEach(item => Console.WriteLine(item));
@@ -164,18 +158,16 @@ namespace Exerc9_LINQ.Servico
 
         private void ImprimirNumeroInformado()
         {
-            int valor;
-            string sair;
 
             Console.WriteLine("Apresentação de número informado.");
 
-            SolicitarNumeroValido(out sair, out valor);
+            SolicitarNumeroValido(out string sair, out int valor);
             if (sair.ToUpper() == "SAIR")
             {
                 return;
             }
 
-            listaNumeros
+            _listaNumeros
                 .Where(item => item == valor)
                 .ToList()
                 .ForEach(item => Console.WriteLine(item));
@@ -186,7 +178,7 @@ namespace Exerc9_LINQ.Servico
         private void ImprimirListaEmArray()
         {
             Console.WriteLine("Imprimir lista em Array.");
-            foreach (int numero in listaNumeros.ToArray())
+            foreach (int numero in _listaNumeros.ToArray())
             {
                 Console.Write(numero);
             }

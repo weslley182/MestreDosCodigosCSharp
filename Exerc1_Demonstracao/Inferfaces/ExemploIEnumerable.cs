@@ -17,7 +17,7 @@ namespace Exerc1_Demonstracao.Inferfaces
 
     class Formula1 : IEnumerable
     {
-        Piloto[] pilotos;
+        private readonly Piloto[] pilotos;
         public Formula1(int quantidadePilotos)
         {
             pilotos = new Piloto[quantidadePilotos];

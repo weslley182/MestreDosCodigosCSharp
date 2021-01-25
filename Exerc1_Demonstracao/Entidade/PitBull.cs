@@ -5,7 +5,8 @@ namespace Exerc1_Demonstracao.Entidade
 {
     public class PitBull: Cachorro, ITerritorial
     {
-        private int _ferocidade;
+        private int _ferocidade;        
+
         public void LutarComOutrosCaes()
         {
             VisualizarOutroCao();
@@ -20,7 +21,7 @@ namespace Exerc1_Demonstracao.Entidade
             _ferocidade += 10;
         }
 
-        public void VisualizarOutroCao()
+        public static void VisualizarOutroCao()
         {
             Console.WriteLine("Encontrou outro cão.");
         }

@@ -11,8 +11,9 @@ namespace Exerc5_BhaskaraTest
         {   //1,8, -9 result = 1 e -9
             CalcularService serv = new CalcularService(1,8,-9);
             serv.CalcularFormula();
-            Assert.Equal(serv.R1, 1);
-            Assert.Equal(serv.R2, -9);
+
+            Assert.Equal(1, serv.R1);
+            Assert.Equal(-9, serv.R2);
         }
     }
 }
