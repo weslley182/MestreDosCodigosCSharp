@@ -7,7 +7,7 @@ namespace Exerc2_Salario.Servico
     public class FuncionarioService
     {
         private int _quantidadeFuncionarios;
-        private List<Funcionario> _funcionarios = new List<Funcionario>();
+        private readonly List<Funcionario> _funcionarios = new List<Funcionario>();
 
         public FuncionarioService()
         {

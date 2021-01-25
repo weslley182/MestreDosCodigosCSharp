@@ -15,7 +15,7 @@ namespace Exerc7_SomaPares.Servico
         {
             Lista = new List<int>();
         }
-        private bool TestarEhPar(int numero) => (numero % 2 == 0);
+        private static bool TestarEhPar(int numero) => (numero % 2 == 0);
 
         public void RealizarCalculo()
         {

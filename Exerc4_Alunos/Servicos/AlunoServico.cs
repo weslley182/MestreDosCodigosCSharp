@@ -6,7 +6,7 @@ namespace Exerc4_Alunos.Servicos
 {
     public class AlunoServico
     {
-        private List<Aluno> _listaAlunos = new List<Aluno>();        
+        private readonly List<Aluno> _listaAlunos = new List<Aluno>();        
 
         public void ApresentarMediasDosAlunos() 
         {            

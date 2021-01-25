@@ -19,11 +19,12 @@ namespace Exerc1_Demonstracao.Entidade
         public void AdicionarFerocidade()
         {
             _ferocidade += 10;
+            Console.WriteLine($"Cão feroz nivel: {_ferocidade}.");
         }
 
         public static void VisualizarOutroCao()
         {
-            Console.WriteLine("Encontrou outro cão.");
+            Console.WriteLine("Encontrou outro cão.");            
         }
 
         public void AdicionarTerritorial()
