@@ -6,7 +6,7 @@ namespace Exerc5_Bhaskara
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
 
             Console.WriteLine("5 - Crie uma aplicação que calcule a fórmula de Bhaskara.");

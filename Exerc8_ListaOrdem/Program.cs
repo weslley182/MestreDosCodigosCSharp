@@ -6,7 +6,7 @@ namespace Exerc8_ListaOrdem
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("8 - Faça uma aplicação ler N valores decimais, imprima os valores em ordem crescente e decrescente.");
             ListaService lista = new ListaService();

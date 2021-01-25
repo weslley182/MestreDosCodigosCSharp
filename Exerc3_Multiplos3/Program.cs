@@ -5,7 +5,7 @@ namespace Exerc3_Multiplos3
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("3 - Faça uma aplicação que imprima todos os múltiplos de 3, entre 1 e 100. Utilize a repetição while.");
             

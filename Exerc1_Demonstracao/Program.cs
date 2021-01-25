@@ -9,7 +9,7 @@ namespace Exerc1_Demonstracao
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("1 - Responda e demonstre no código os itens abaixo:");
             ExecutarExemplosDePOOBasico();
