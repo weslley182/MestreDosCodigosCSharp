@@ -33,7 +33,7 @@
 
         public string ConsultarVolumeCanal()
         {
-            return $"Volume {tv.Volume.ToString()}"
+            return $"Volume {tv.Volume}"
                 + $" - {tv.InformarDadosCanal()}";
         }
 

@@ -8,7 +8,7 @@ namespace Exerc1_CalculadoraTest
     {
 
         private Calculadora _calc;
-        const double DeltaAproximacao = 0.0001;
+        const double deltaAproximacao = 0.0001;
 
         [TestInitialize]
         public void CriarCalculadora() => _calc = new Calculadora();        
@@ -22,7 +22,7 @@ namespace Exerc1_CalculadoraTest
 
             var ResultadoSoma = _calc.Somar();
 
-            Assert.AreEqual(ValorSomaEsperado, ResultadoSoma, DeltaAproximacao);
+            Assert.AreEqual(ValorSomaEsperado, ResultadoSoma, deltaAproximacao);
         }
 
         [TestMethod]
@@ -34,7 +34,7 @@ namespace Exerc1_CalculadoraTest
 
             var Resultado = _calc.Subtrair();
 
-            Assert.AreEqual(ValorSomaEsperado, Resultado, DeltaAproximacao);
+            Assert.AreEqual(ValorSomaEsperado, Resultado, deltaAproximacao);
         }
 
         [TestMethod]
@@ -46,7 +46,7 @@ namespace Exerc1_CalculadoraTest
 
             var Resultado = _calc.Multiplicar();
 
-            Assert.AreEqual(ValorSomaEsperado, Resultado, DeltaAproximacao);
+            Assert.AreEqual(ValorSomaEsperado, Resultado, deltaAproximacao);
         }
 
         [TestMethod]
@@ -58,7 +58,7 @@ namespace Exerc1_CalculadoraTest
 
             var Resultado = _calc.Dividir();
 
-            Assert.AreEqual(ValorSomaEsperado, Resultado, DeltaAproximacao);
+            Assert.AreEqual(ValorSomaEsperado, Resultado, deltaAproximacao);
         }
 
         [TestMethod]
@@ -70,7 +70,7 @@ namespace Exerc1_CalculadoraTest
 
             var Resultado = _calc.Dividir();
 
-            Assert.AreEqual(ValorSomaEsperado, Resultado, DeltaAproximacao);
+            Assert.AreEqual(ValorSomaEsperado, Resultado, deltaAproximacao);
         }
 
         [TestMethod]

@@ -33,24 +33,24 @@ namespace Exerc1_Calculadora.Servicos
 
         private void ExibirResultado(string opcao) 
         {
-            string sTexto = String.Empty;
+            string texto = String.Empty;
             switch (opcao) 
             {
                 case "1":
-                    sTexto = _calculadora.Somar().ToString("F2", CultureInfo.InvariantCulture);
+                    texto = _calculadora.Somar().ToString("F2", CultureInfo.InvariantCulture);
                     break;
                 case "2":
-                    sTexto = _calculadora.Subtrair().ToString("F2", CultureInfo.InvariantCulture);
+                    texto = _calculadora.Subtrair().ToString("F2", CultureInfo.InvariantCulture);
                     break;
                 case "3":
-                    sTexto = _calculadora.Dividir().ToString("F2", CultureInfo.InvariantCulture);
+                    texto = _calculadora.Dividir().ToString("F2", CultureInfo.InvariantCulture);
                     break;
                 case "4":
-                    sTexto = _calculadora.Multiplicar().ToString("F2", CultureInfo.InvariantCulture);
+                    texto = _calculadora.Multiplicar().ToString("F2", CultureInfo.InvariantCulture);
                     break;
             }
 
-            Console.WriteLine($"Opção {opcao} - Resultado: " + sTexto);
+            Console.WriteLine($"Opção {opcao} - Resultado: " + texto);
             Console.WriteLine(String.Empty);
         }
 
@@ -67,24 +67,24 @@ namespace Exerc1_Calculadora.Servicos
             Console.WriteLine("7 - Sair");            
 
             Console.WriteLine("Digite o número da opção desejada:");
-            string sOpcao = Console.ReadLine();
+            string opcao = Console.ReadLine();
 
-            switch (sOpcao)
+            switch (opcao)
             {
                 case "1":
-                    ExibirResultado(sOpcao);
+                    ExibirResultado(opcao);
                     ExibirDadosProcessamento();
                     break;
                 case "2":
-                    ExibirResultado(sOpcao);                    
+                    ExibirResultado(opcao);                    
                     ExibirDadosProcessamento();
                     break;
                 case "3":
-                    ExibirResultado(sOpcao);
+                    ExibirResultado(opcao);
                     ExibirDadosProcessamento();
                     break;
                 case "4":
-                    ExibirResultado(sOpcao);
+                    ExibirResultado(opcao);
                     ExibirDadosProcessamento();
                     break;
                 case "5":

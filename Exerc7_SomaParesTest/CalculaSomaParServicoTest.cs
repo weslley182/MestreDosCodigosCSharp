@@ -6,7 +6,7 @@ namespace Exerc7_SomaParesTest
     [TestClass]
     public class CalculaSomaParServicoTest
     {
-        CalculaSomaParServico _serv;
+        private CalculaSomaParServico _serv;
 
         [TestInitialize]
         public void IniciarConstrutor()

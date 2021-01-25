@@ -15,32 +15,20 @@ namespace Exerc3_Multiplos3.Servico
             Lista = new List<int>();
         }
 
-        public bool TestarEhMultiplo(int contador)
-        {
-            return (contador % _valor == 0);
-        }
+        public bool TestarEhMultiplo(int contador) => (contador % _valor == 0);        
 
         public void BuscarMultiplosAteh(int quantidade)
         {
-            int nContador = 1;
+            int contador = 1;
             do
             {
-                if (TestarEhMultiplo(nContador))
+                if (TestarEhMultiplo(contador))
                 {
-                    Lista.Add(nContador);
+                    Lista.Add(contador);
                 }
                 
-                nContador++;
-            } while (nContador <= quantidade);            
-        }
-
-        private int RetornarValor(int valor)
-        {
-            if (TestarEhMultiplo(valor))
-            {
-                return valor;
-            }
-            return 0;
-        }
+                contador++;
+            } while (contador <= quantidade);            
+        }        
     }
 }

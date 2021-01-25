@@ -6,9 +6,8 @@ namespace Exerc4_Alunos.Entidades
 {
     class Aluno
     {
-        public string Nome { get; set; }
-        // public string[] Notas { get; set; }        
-        public double Media { get { return CalcularMedia(); } }
+        public string Nome { get; set; }        
+        public double Media => CalcularMedia();
 
         public List<string> Notas = new List<string>();
 
@@ -38,38 +37,34 @@ namespace Exerc4_Alunos.Entidades
 
         private double PegarNota(string nota)
         {
-            double nNota;
+            double VerificaNota;
 
             try
             {
-                nNota = double.Parse(nota.Trim());
+                VerificaNota = double.Parse(nota.Trim());
             }
             catch
             {
                 throw new ArgumentException("Uma letra não pode ser digitada como nota.");
             }
              
-            if(nNota < 0 || nNota > 10)
+            if(VerificaNota < 0 || VerificaNota > 10)
             {
                 throw new ArgumentException("Digite uma nota entre 0 e 10.");
             }
 
-            return nNota;
+            return VerificaNota;
         }        
 
         public override string ToString()
         {
-            return "Nome: " + Nome
-                + " Media: " + CalcularMedia().ToString("F2", CultureInfo.InvariantCulture);
+            return $"Nome: {Nome}"
+                + $" Media: {CalcularMedia().ToString("F2", CultureInfo.InvariantCulture)}";
         }
 
         public void TestarNotasValidas()
-        {
-            double nNota;
-            foreach (string nota in Notas)
-            {
-                nNota = PegarNota(nota);
-            }
+        {         
+            Notas.ForEach(nota => PegarNota(nota));         
         }
     }
 }

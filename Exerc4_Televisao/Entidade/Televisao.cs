@@ -35,22 +35,22 @@ namespace Exerc4_Televisao.Entidade
         }
         public void AumentarVolume()
         {
-            Volume += 1;
+            Volume++;
         }
 
         public void DiminuirVolume()
         {
-            Volume -= 1;
+            Volume--;
         }
 
         public void AumentarNumeroCanal()
         {
-            NumeroCanal += 1;
+            NumeroCanal++;
         }
 
         public void DiminuirNumeroCanal()
         {
-            NumeroCanal -= 1;
+            NumeroCanal--;
         }
 
         public List<Canal> ListaCanais = new List<Canal>();
@@ -68,8 +68,11 @@ namespace Exerc4_Televisao.Entidade
 
         public Televisao()
         {
+            const int canalGlobo = 3;
+            const int volumeVinte = 20;
             SintonizarCanais();
-            Volume = 20;
+            Volume = volumeVinte;
+            NumeroCanal = canalGlobo;
         }
     }
 }

@@ -6,7 +6,7 @@ namespace Exerc7_SomaPares.Servico
 {
     public class CalculaSomaParServico
     {        
-        public List<int> Lista { get; set; }
+        public List<int> Lista { get; init; }
 
         private int _valor;
         public int ValorTotal { get; set; }
@@ -15,10 +15,7 @@ namespace Exerc7_SomaPares.Servico
         {
             Lista = new List<int>();
         }
-        private bool TestarEhPar(int numero)
-        {
-            return (numero % 2 == 0);
-        }
+        private bool TestarEhPar(int numero) => (numero % 2 == 0);
 
         public void RealizarCalculo()
         {

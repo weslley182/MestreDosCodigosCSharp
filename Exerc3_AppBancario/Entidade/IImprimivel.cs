@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Exerc3_AppBancario.Entidade
 {
-    public interface IImprimivel
+    interface IImprimivel
     {
         public string MostrarDados();
     }

@@ -9,7 +9,7 @@ namespace Exerc4_Alunos.Servicos
         private List<Aluno> _listaAlunos = new List<Aluno>();        
 
         public void ApresentarMediasDosAlunos() 
-        {
+        {            
             foreach(Aluno aluno in _listaAlunos)
             {
                 if(aluno.CalcularMedia() > 7) 
@@ -26,23 +26,23 @@ namespace Exerc4_Alunos.Servicos
 
         public void RealizarEntradaDeAlunos()
         {
-            int nQuantidadeAlunos;
-            string sNome;
-            string sNotas;
+            int quantidadeAlunos;
+            string nome;
+            string notas;
             do
             {
                 Console.WriteLine("Quantos alunos serão verificados?");
-            } while (!int.TryParse(Console.ReadLine(), out nQuantidadeAlunos));
+            } while (!int.TryParse(Console.ReadLine(), out quantidadeAlunos));
 
-            for(int nContador = 1; nContador <= nQuantidadeAlunos; nContador++)
+            for(int contador = 1; contador <= quantidadeAlunos; contador++)
             {
                 Console.WriteLine("Entre com o Nome do Aluno:");
-                sNome = Console.ReadLine();
+                nome = Console.ReadLine();
 
                 Console.WriteLine("Entre com as notas, separadas por ,(vírgula):");                
-                sNotas = Console.ReadLine();
+                notas = Console.ReadLine();
 
-                Aluno aluno = new Aluno(sNome, sNotas);
+                Aluno aluno = new Aluno(nome, notas);
                 aluno.TestarNotasValidas();
                 AdicionarAluno(aluno);
             }

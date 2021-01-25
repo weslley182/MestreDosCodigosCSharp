@@ -40,26 +40,26 @@ namespace Exerc2_Salario.Servico
 
         public void CadastrarFuncionario(int contador)
         {
-            string sNome;
-            double nSalario;
+            string nome;
+            double salario;
             
             Console.WriteLine($"Entre com o nome do funcionário: #{contador}.");
-            sNome = Console.ReadLine();
+            nome = Console.ReadLine();
 
             do
             {
                 Console.WriteLine($"Entre com o salário do funcionário: #{contador}.");
-            } while (!double.TryParse(Console.ReadLine(), out nSalario));
+            } while (!double.TryParse(Console.ReadLine(), out salario));
 
-            Funcionario func = new Funcionario(sNome, nSalario);
+            Funcionario func = new Funcionario(nome, salario);
             _funcionarios.Add(func);
         }
 
         private void RealizarEntradaDeFuncionarios()
         {
-            for(int nContador = 1; nContador <= _quantidadeFuncionarios; nContador++)
+            for(int contador = 1; contador <= _quantidadeFuncionarios; contador++)
             {
-                CadastrarFuncionario(nContador);
+                CadastrarFuncionario(contador);
             }
         }
 
