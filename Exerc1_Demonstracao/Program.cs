@@ -2,6 +2,8 @@
 using Exerc1_Demonstracao.Entidade;
 using Exerc1_Demonstracao.Inferfaces;
 using Exerc1_Demonstracao.Servico;
+using Exerc1_Demonstracao.Entidade.Caracteristica;
+
 
 namespace Exerc1_Demonstracao
 {
@@ -35,6 +37,10 @@ namespace Exerc1_Demonstracao
             PitBull pit = new PitBull();
             Console.WriteLine("Pit Bull");
             pit.LutarComOutrosCaes();
+
+            ITerritorial pit2 = new PitBull();
+            Console.WriteLine("Segundo Pit Bull");
+            pit.AdicionarTerritorial();
 
             PastorAlemao pastor = new PastorAlemao();
             Console.WriteLine("Pastor alemão");

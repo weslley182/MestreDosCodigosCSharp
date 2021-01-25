@@ -27,7 +27,7 @@ namespace Exerc2_Salario.Entidade
 
         public override string ToString()
         {
-            return "Nome:" + Nome + " - Salário: " + Salario.ToString("F2", CultureInfo.InvariantCulture);
+            return $"Nome: {Nome} - Salário: {Salario.ToString("F2", CultureInfo.InvariantCulture)}";
         }
     }
 }

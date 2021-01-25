@@ -1,6 +1,5 @@
 ﻿using System;
 
-
 namespace Exerc1_Demonstracao.Entidade
 {
     public class Cachorro : Animal

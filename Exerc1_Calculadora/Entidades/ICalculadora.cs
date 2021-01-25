@@ -1,6 +1,6 @@
 ﻿namespace Exerc1_Calculadora.Entidades
 {
-    public interface ICalculadora
+    interface ICalculadora
     {
         double ValorA { get; set; }
         double ValorB { get; set; }

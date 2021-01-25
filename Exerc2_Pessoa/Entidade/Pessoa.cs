@@ -31,18 +31,17 @@ namespace Exerc2_Pessoa.Entidade
             return idade;
         }
 
-        public override string ToString()
-        {
-            StringBuilder sb = new StringBuilder();
-            sb.Append("Nome: ");
-            sb.Append(_nome);
-            sb.Append(", data de nascimento: ");
-            sb.Append(_dataNascimento.ToString("dd/MM/yyyy"));
-            sb.Append(", altura: ");
-            sb.Append(_altura.ToString("F2", CultureInfo.InvariantCulture));
-            sb.Append(", idade: ");
-            sb.Append(Idade.ToString());
-            return sb.ToString();
-        }
+        public override string ToString() =>        
+            new StringBuilder()
+                .Append("Nome: ")
+                .Append(_nome)
+                .Append(", data de nascimento: ")
+                .Append(_dataNascimento.ToString("dd/MM/yyyy"))
+                .Append(", altura: ")
+                .Append(_altura.ToString("F2", CultureInfo.InvariantCulture))
+                .Append(", idade: ")
+                .Append(Idade.ToString())
+                .ToString();            
+        
     }
 }

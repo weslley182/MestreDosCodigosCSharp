@@ -11,20 +11,20 @@ namespace Exerc2_Pessoa
             Console.WriteLine("Entre com os dados da Pessoa:");
 
             Console.WriteLine("Nome:");
-            string sNome = Console.ReadLine();
+            string nome = Console.ReadLine();
 
             Console.WriteLine("Data de nascimento no formato dd/MM/yyyy:");
-            string[] sData = Console.ReadLine().Split("/");
+            string[] data = Console.ReadLine().Split("/");
             
             Console.WriteLine("Altura da pessoa separada por vírgula: (0,00)");
-            double nAltura = double.Parse(Console.ReadLine());
+            double altura = double.Parse(Console.ReadLine());
 
 
-            int nDia = int.Parse(sData[0]);
-            int nMes = int.Parse(sData[1]);
-            int nAno = int.Parse(sData[2]);
+            int dia = int.Parse(data[0]);
+            int mes = int.Parse(data[1]);
+            int ano = int.Parse(data[2]);
 
-            Pessoa pessoa = new Pessoa(sNome, new DateTime(nAno,nMes,nDia), nAltura);
+            Pessoa pessoa = new Pessoa(nome, new DateTime(ano,mes,dia), altura);
             Console.WriteLine(pessoa);
         }
     }

@@ -4,15 +4,16 @@ namespace Exerc1_Demonstracao.Inferfaces
 {
     public class Pessoa: ICloneable
     {
-        public string Nome { get; set; }
-        public int Idade { get; set; }
-        public Endereco Endereco { get; set; }
         public Pessoa(string nome, int idade, Endereco endereco)
         {
             Nome = nome;
             Idade = idade;
             Endereco = endereco;
         }
+        public string Nome { get; set; }
+        public int Idade { get; set; }
+        public Endereco Endereco { get; set; }
+        
 
         public override string ToString()
         {
@@ -24,16 +25,5 @@ namespace Exerc1_Demonstracao.Inferfaces
             return this.MemberwiseClone();
         }        
     }
-
-    public class Endereco
-    {
-        public string Rua { get; set; }
-        public string Cep { get; set; }
-        public Endereco(string rua, string cep)
-        {
-            Rua = rua;
-            Cep = cep;
-        }
-        
-    }
+    
 }

@@ -7,7 +7,7 @@ namespace Exerc1_Demonstracao.Inferfaces
 {
     class Piloto
     {
-        public string Nome { get; set; }
+        public string Nome { get; init; }
 
         public Piloto(string nome)
         {

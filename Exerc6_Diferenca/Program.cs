@@ -12,16 +12,16 @@ namespace Exerc6_Diferenca
 
             Console.WriteLine("Variáveis nValorRef e nValorOut serão inicializadas com valor 10");
 
-            int nValorRef = 10;
-            int nValorOut;
+            int valorRef = 10;
+            int valorOut;
             CalculoOutRef serv = new CalculoOutRef();
 
-            serv.MetodoUtilizandoRef(ref nValorRef);
+            serv.MetodoUtilizandoRef(ref valorRef);
             
-            serv.MetodoUtilizandoOut(out nValorOut);
+            serv.MetodoUtilizandoOut(out valorOut);
 
-            Console.WriteLine($"Método utilizando ref obteve a saída {nValorRef}");
-            Console.WriteLine($"Método utilizando out obteve a saída {nValorOut}");
+            Console.WriteLine($"Método utilizando ref obteve a saída {valorRef}");
+            Console.WriteLine($"Método utilizando out obteve a saída {alorOut}");
         }
     }
 }

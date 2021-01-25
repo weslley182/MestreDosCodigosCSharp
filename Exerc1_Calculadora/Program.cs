@@ -15,7 +15,8 @@ namespace Exerc1_Calculadora
         {                        
             Calculadora calculadora = new Calculadora();
             Processador processador = new Processador(calculadora);
-
+            
+            processador.InformarValores();
             processador.ExibirDadosProcessamento();            
         }                
         

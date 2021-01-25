@@ -6,37 +6,20 @@ namespace Exerc1_Calculadora.Servicos
     {
         public double ValorA { get; set; }
         public double ValorB { get; set; }
-        public string DescricaoValorA { get { return PegarDescricaoValorParImpar(ValorA); } }
-        public string DescricaoValorB { get { return PegarDescricaoValorParImpar(ValorB); } }
+        public string DescricaoValorA => PegarDescricaoValorParImpar(ValorA);
+        public string DescricaoValorB => PegarDescricaoValorParImpar(ValorB);
+
+
+
+        public double Somar() => ValorA + ValorB;        
+
+        public double Subtrair() => ValorA - ValorB;        
+
+        public double Multiplicar() => ValorA * ValorB;
         
+        public double Dividir() => (ValorA == 0 ? 0 : ValorB / ValorA);
 
-        public double Somar()
-        {
-            return ValorA + ValorB;
-        }
-
-        public double Subtrair()
-        {
-            return ValorA - ValorB;
-        }
-
-        public double Multiplicar()
-        {
-            return ValorA * ValorB;
-        }
-        public double Dividir()
-        {
-            if(ValorA == 0)
-            {
-                return 0;
-            }
-            return ValorB / ValorA;
-        }
-
-        public bool TestarValorEhpar(double valor)
-        {
-            return (valor % 2 == 0);
-        }
+        public bool TestarValorEhpar(double valor) => (valor % 2 == 0);        
 
         private string PegarDescricaoValorParImpar(double valor)
         {

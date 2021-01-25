@@ -42,13 +42,13 @@ namespace Exerc8_ListaOrdem.Servico
         {            
             Console.WriteLine("Imprimir lista em ordem crescente:");
 
-            _numeros = _numeros.OrderBy(c => c).ToArray();
+            _numeros = _numeros.OrderBy(c => c).ToArray();            
             
             foreach (int numero in _numeros)
             {
                 Console.Write(numero + " ");
             }
-            Console.WriteLine("");
+            Console.WriteLine(String.Empty);
         }
 
         private void ImprimirListaOrdemDecrescente()
@@ -61,7 +61,7 @@ namespace Exerc8_ListaOrdem.Servico
             {
                 Console.Write(numero + " ");
             }
-            Console.WriteLine("");
+            Console.WriteLine(String.Empty);
         }
 
     }

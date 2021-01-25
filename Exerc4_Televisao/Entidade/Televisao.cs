@@ -9,14 +9,14 @@ namespace Exerc4_Televisao.Entidade
 
         public int Volume
         {
-            get { return _volume; }
-            set { if (TestarValorEhValido(value)) { _volume = value; } }
+            get => _volume;
+            set => _volume = TestarValorEhValido(value) ? value : _volume;
         }
 
         public int NumeroCanal
         {
-            get { return _numeroCanal; }
-            set { if (TestarValorEhValido(value)) { _numeroCanal = value; } }
+            get => _numeroCanal;
+            set => _numeroCanal = TestarValorEhValido(value) ? value : _numeroCanal;
         }
 
         public string InformarDadosCanal()
@@ -24,10 +24,10 @@ namespace Exerc4_Televisao.Entidade
             var achou = (ListaCanais.Find(item => item.Numero == NumeroCanal));
             if (achou == null)
             {
-                return $"Canal {NumeroCanal.ToString()} não encontrado";
+                return $"Canal {NumeroCanal} não encontrado";
             }
 
-            return $"Canal {achou.Numero.ToString()} - {achou.Descricao}";
+            return $"Canal {achou.Numero} - {achou.Descricao}";
         }
         public bool TestarValorEhValido(int valor)
         {

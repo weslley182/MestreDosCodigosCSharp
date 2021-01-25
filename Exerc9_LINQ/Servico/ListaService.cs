@@ -36,12 +36,12 @@ namespace Exerc9_LINQ.Servico
                 string valorDigitado;
                 int valorInteiro;
 
-                SolicitarNumeroValido(out valorDigitado, out valorInteiro);               
-                
-
+                SolicitarNumeroValido(out valorDigitado, out valorInteiro);
 
                 if (valorDigitado.ToUpper() == "SAIR")
+                {
                     break;
+                }                    
 
                 listaNumeros.Add(valorInteiro);
             }
@@ -58,11 +58,11 @@ namespace Exerc9_LINQ.Servico
                 Console.WriteLine("Valor inválido.");
                 Console.WriteLine(sNUMERO);
             }
-        }
+        }        
 
         private void ApresentarListaOrdemPadrao()
         {
-            listaNumeros.ForEach(n => { Console.Write(n.ToString()); });
+            listaNumeros.ForEach(n => Console.Write(n));
             Console.WriteLine(String.Empty);
         }
         private void ImprimirNumerosListaOrdemInsercao()
@@ -74,16 +74,20 @@ namespace Exerc9_LINQ.Servico
         private void ImprimirNumerosListaOrdemCrescente()
         {
             Console.WriteLine("Apresentação da lista em ordem crescente.");
-            listaNumeros.OrderBy(n => n).ToList()
-               .ForEach(n => { Console.Write(n.ToString()); });
+            listaNumeros
+                .OrderBy(n => n)
+                .ToList()
+                .ForEach(n => Console.Write(n));
             Console.WriteLine(String.Empty);
         }
 
         private void ImprimirNumerosListaOrdemDecrescente()
         {
             Console.WriteLine("Apresentação da lista em ordem decrescente.");
-            listaNumeros.OrderByDescending(n => n).ToList()
-                .ForEach(n => { Console.Write(n.ToString()); });
+            listaNumeros
+                .OrderByDescending(n => n)
+                .ToList()
+                .ForEach(n =>Console.Write(n));
             Console.WriteLine(String.Empty);
         }
 
@@ -151,8 +155,10 @@ namespace Exerc9_LINQ.Servico
         private void ImprimirApenasNumerosPares()
         {
             Console.WriteLine("Apresentação de números pares da lista.");
-            listaNumeros.Where(item => ((item % 2) == 0)).ToList()
-                .ForEach(item => { Console.WriteLine(item.ToString()); });
+            listaNumeros
+                .Where(item => ((item % 2) == 0))
+                .ToList()
+                .ForEach(item => Console.WriteLine(item));
             Console.WriteLine(String.Empty);
         }
 
@@ -169,8 +175,10 @@ namespace Exerc9_LINQ.Servico
                 return;
             }
 
-            listaNumeros.Where(item => item == valor).ToList()
-               .ForEach(item => { Console.WriteLine(item.ToString()); });
+            listaNumeros
+                .Where(item => item == valor)
+                .ToList()
+                .ForEach(item => Console.WriteLine(item));
 
             Console.WriteLine(String.Empty);
         }

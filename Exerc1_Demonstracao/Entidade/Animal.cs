@@ -1,11 +1,9 @@
-﻿
-
-namespace Exerc1_Demonstracao.Entidade
+﻿namespace Exerc1_Demonstracao.Entidade
 {
-    abstract public class Animal
+    public abstract class Animal
     {
-        private string _nome;        
-        abstract public void Falar();
+        private string _nome;
+        public abstract void Falar();
 
         public string GetNome()
         {

@@ -28,6 +28,7 @@ namespace Exerc1_Demonstracao.Inferfaces
         {
             Console.WriteLine($"Realizando consulta banco de dados {Tipo}");
         }
+
         public void Dispose()
         {
             Console.WriteLine($"Entrou no dispose, liberou banco {Tipo}");

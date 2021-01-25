@@ -6,81 +6,87 @@ namespace Exerc1_CalculadoraTest
     [TestClass]
     public class CalculadoraTest
     {
+
         private Calculadora _calc;
+        const double DeltaAproximacao = 0.0001;
 
         [TestInitialize]
-        public void CriarCalculadora()
-        {
-            _calc = new Calculadora();
-        }
+        public void CriarCalculadora() => _calc = new Calculadora();        
 
         [TestMethod]
         public void TestarOperacaoSoma()
         {
-            
+            const double ValorSomaEsperado = 40;            
             _calc.ValorA = 10;
             _calc.ValorB = 30;
 
-            double nValorSomaEsperado = 40;
-            Assert.AreEqual(nValorSomaEsperado, _calc.Somar(), 0.0001);
+            var ResultadoSoma = _calc.Somar();
+
+            Assert.AreEqual(ValorSomaEsperado, ResultadoSoma, DeltaAproximacao);
         }
 
         [TestMethod]
         public void TestarOperacaoSubtracao()
         {
-
+            const double ValorSomaEsperado = 20;
             _calc.ValorA = 30;
             _calc.ValorB = 10;
 
-            double nValorSomaEsperado = 20;
-            Assert.AreEqual(nValorSomaEsperado, _calc.Subtrair(), 0.0001);
+            var Resultado = _calc.Subtrair();
+
+            Assert.AreEqual(ValorSomaEsperado, Resultado, DeltaAproximacao);
         }
 
         [TestMethod]
         public void TestarOperacaoMultiplicacao()
         {
-
+            const double ValorSomaEsperado = 200;
             _calc.ValorA = 20;
             _calc.ValorB = 10;
 
-            double nValorSomaEsperado = 200;
-            Assert.AreEqual(nValorSomaEsperado, _calc.Multiplicar(), 0.0001);
+            var Resultado = _calc.Multiplicar();
+
+            Assert.AreEqual(ValorSomaEsperado, Resultado, DeltaAproximacao);
         }
 
         [TestMethod]
         public void TestarOperacaoDivisao()
         {
-
+            const double ValorSomaEsperado = 2;
             _calc.ValorA = 10;
             _calc.ValorB = 20;
 
-            double nValorSomaEsperado = 2;
-            Assert.AreEqual(nValorSomaEsperado, _calc.Dividir(), 0.0001);
+            var Resultado = _calc.Dividir();
+
+            Assert.AreEqual(ValorSomaEsperado, Resultado, DeltaAproximacao);
         }
 
         [TestMethod]
         public void TestarOperacaoDivisaoporZero()
         {
-
+            const double ValorSomaEsperado = 0;
             _calc.ValorA = 0;
             _calc.ValorB = 20;
 
-            double nValorSomaEsperado = 0;
-            Assert.AreEqual(nValorSomaEsperado, _calc.Dividir(), 0.0001);
+            var Resultado = _calc.Dividir();
+
+            Assert.AreEqual(ValorSomaEsperado, Resultado, DeltaAproximacao);
         }
 
         [TestMethod]
         public void TestarOperacaoDeveSerImpar()
         {
-            double nValorImpar = 3;
-            Assert.IsFalse(_calc.TestarValorEhpar(nValorImpar));
+            const double ValorImpar = 3;
+
+            Assert.IsFalse(_calc.TestarValorEhpar(ValorImpar));
         }
 
         [TestMethod]
         public void TestarOperacaoDeveSerPar()
         {
-            double nValorPar = 4;            
-            Assert.IsTrue(_calc.TestarValorEhpar(nValorPar));            
+            const double ValorPar = 4;
+
+            Assert.IsTrue(_calc.TestarValorEhpar(ValorPar));            
         }
     }
 }

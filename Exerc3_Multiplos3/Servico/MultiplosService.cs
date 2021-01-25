@@ -7,7 +7,7 @@ namespace Exerc3_Multiplos3.Servico
     public class MultiplosService
     {
         private readonly int _valor;
-        public List<int> Lista { get; set; }
+        public List<int> Lista { get; init; }
         
         public MultiplosService(int multiplo)
         {

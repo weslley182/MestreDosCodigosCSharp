@@ -4,19 +4,18 @@ using System.Globalization;
 
 namespace Exerc1_Calculadora.Servicos
 {
-    public class Processador
+    class Processador
     {
         private double _valorA;
         private double _valorB;
 
-        private ICalculadora _calculadora;
+        private readonly ICalculadora _calculadora;
         public Processador(ICalculadora calculadora)
         {
-            _calculadora = calculadora;
-            InformarValores();            
+            _calculadora = calculadora;            
         }
 
-        private void InformarValores()
+        public void InformarValores()
         {
             do
             {
@@ -34,7 +33,7 @@ namespace Exerc1_Calculadora.Servicos
 
         private void ExibirResultado(string opcao) 
         {
-            string sTexto = "";
+            string sTexto = String.Empty;
             switch (opcao) 
             {
                 case "1":
@@ -52,7 +51,7 @@ namespace Exerc1_Calculadora.Servicos
             }
 
             Console.WriteLine($"Opção {opcao} - Resultado: " + sTexto);
-            Console.WriteLine("");
+            Console.WriteLine(String.Empty);
         }
 
         public void ExibirDadosProcessamento()
@@ -89,8 +88,8 @@ namespace Exerc1_Calculadora.Servicos
                     ExibirDadosProcessamento();
                     break;
                 case "5":
-                    Console.WriteLine("Opção 5 - Resultado: A é " + _calculadora.DescricaoValorA + " e B é " + _calculadora.DescricaoValorB);
-                    Console.WriteLine("");
+                    Console.WriteLine($"Opção 5 - Resultado: A é { _calculadora.DescricaoValorA} e B é {_calculadora.DescricaoValorB}");
+                    Console.WriteLine(String.Empty);
                     ExibirDadosProcessamento();
                     break;
                 case "6":
@@ -102,7 +101,7 @@ namespace Exerc1_Calculadora.Servicos
                     break;
                 default:
                     Console.WriteLine("Opção inacessivel.");
-                    Console.WriteLine("");
+                    Console.WriteLine(String.Empty);
                     ExibirDadosProcessamento();
                     break;
             }
