@@ -15,7 +15,7 @@ namespace Exerc3_AppBancario
 
         private static void RealizarAcaoContaCorrente()
         {
-            ContaCorrente conta = new ContaCorrente("745509-2", 2000, 10);
+            ContaCorrente conta = new ContaCorrente("745509-2", 2000, 3);
             try
             {
                 Console.WriteLine(conta.MostrarDados());
