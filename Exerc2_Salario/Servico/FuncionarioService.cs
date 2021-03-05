@@ -7,6 +7,8 @@ namespace Exerc2_Salario.Servico
     public class FuncionarioService
     {
         private int _quantidadeFuncionarios;
+        private Funcionario _funcMaiorSalario;
+        private Funcionario _funcMenorSalario;
         private readonly List<Funcionario> _funcionarios = new List<Funcionario>();
 
         public FuncionarioService()
@@ -18,17 +20,7 @@ namespace Exerc2_Salario.Servico
         public void AdicionarFuncionario(Funcionario funcionario)
         {
             _funcionarios.Add(funcionario);
-        }
-
-        public Funcionario FuncionarioComMaiorSalario()
-        {
-            return _funcionarios[_quantidadeFuncionarios -1];
-        }
-
-        public Funcionario FuncionarioComMenorSalario()
-        {
-            return _funcionarios[0];
-        }
+        }        
 
         public void InserirQuantidadeDeFuncionarios()
         {
@@ -65,22 +57,39 @@ namespace Exerc2_Salario.Servico
 
         public void ApresentarFuncionarios() 
         {
-            _funcionarios.Sort();
+            ProcessarSalarioFuncionarios();
             ApresentarFuncionarioMenorSalario();
             ApresentarFuncionarioMaiorSalario();
         }
+        private void ProcessarSalarioFuncionarios() 
+        {
+            
+            _funcMenorSalario = _funcionarios[0];
+            _funcMaiorSalario = _funcionarios[0];
+            for (int i = 0; i < _funcionarios.Count; i++)
+            {
+                if (_funcionarios[i].Salario > _funcMaiorSalario.Salario)
+                {
+                    _funcMaiorSalario = _funcionarios[i];
+                }
 
+                if (_funcionarios[i].Salario < _funcMenorSalario.Salario)
+                {
+                    _funcMenorSalario = _funcionarios[i];
+                }
+            }
+        }
         public void ApresentarFuncionarioMenorSalario()
         {
             Console.WriteLine("Funcionario com menor salário");
-            Console.WriteLine(FuncionarioComMenorSalario());
+            Console.WriteLine(_funcMenorSalario);
 
         }
 
         public void ApresentarFuncionarioMaiorSalario()
         {
             Console.WriteLine("Funcionario com Maior salário");
-            Console.WriteLine(FuncionarioComMaiorSalario());
+            Console.WriteLine(_funcMaiorSalario);
         }
     }
 }
