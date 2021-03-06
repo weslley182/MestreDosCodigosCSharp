@@ -7,15 +7,34 @@ namespace Exerc2_Pessoa.Entidade
 {
     public class Pessoa
     {
-        public string Nome { get; set; }
-        public DateTime DataNascimento { get; set; }
-        public double Altura { get; set; }
+        private string _nome;
+        public string Nome
+        {
+            get { return _nome; }
+            set { _nome = value; }
+        }
+
+        private DateTime _dataNascimento;
+        public DateTime DataNascimento
+        {
+            get { return _dataNascimento; }
+            set { _dataNascimento = value; }
+        }
+
+        private double _altura;
+
+        public double Altura
+        {
+            get { return _altura; }
+            set { _altura = value; }
+        }
+        
         
         public Pessoa(string nome, DateTime dataNascimento, double altura)
         {
-            Nome = nome;
-            DataNascimento = dataNascimento;
-            Altura = altura;
+            _nome = nome;
+            _dataNascimento = dataNascimento;
+            _altura = altura;
         }
 
         private int BuscarIdade()
