@@ -7,24 +7,21 @@ namespace Exerc2_Pessoa.Entidade
 {
     public class Pessoa
     {
-        private readonly string _nome;
-
-        private readonly DateTime _dataNascimento;
-
-        private readonly double _altura;
-
-        private int Idade { get { return BuscarIdade(); } }
+        public string Nome { get; set; }
+        public DateTime DataNascimento { get; set; }
+        public double Altura { get; set; }
+        
         public Pessoa(string nome, DateTime dataNascimento, double altura)
         {
-            _nome = nome;
-            _dataNascimento = dataNascimento;
-            _altura = altura;
+            Nome = nome;
+            DataNascimento = dataNascimento;
+            Altura = altura;
         }
 
         private int BuscarIdade()
         {
-            int idade = DateTime.Now.Year - _dataNascimento.Year;
-            if(DateTime.Now.DayOfYear < _dataNascimento.DayOfYear)
+            int idade = DateTime.Now.Year - DataNascimento.Year;
+            if(DateTime.Now.DayOfYear < DataNascimento.DayOfYear)
             {
                 return idade - 1;
             }
@@ -34,13 +31,13 @@ namespace Exerc2_Pessoa.Entidade
         public override string ToString() =>        
             new StringBuilder()
                 .Append("Nome: ")
-                .Append(_nome)
+                .Append(Nome)
                 .Append(", data de nascimento: ")
-                .Append(_dataNascimento.ToString("dd/MM/yyyy"))
+                .Append(DataNascimento.ToString("dd/MM/yyyy"))
                 .Append(", altura: ")
-                .Append(_altura.ToString("F2", CultureInfo.InvariantCulture))
+                .Append(Altura.ToString("F2", CultureInfo.InvariantCulture))
                 .Append(", idade: ")
-                .Append(Idade.ToString())
+                .Append(BuscarIdade())
                 .ToString();            
         
     }
