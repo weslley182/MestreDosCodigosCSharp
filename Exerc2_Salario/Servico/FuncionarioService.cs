@@ -63,20 +63,34 @@ namespace Exerc2_Salario.Servico
         }
         private void ProcessarSalarioFuncionarios() 
         {
-            
+            CalcularMaiorSalario();
+            CalcularMenorSalario();            
+        }
+
+        public void CalcularMenorSalario()
+        {
             _funcMenorSalario = _funcionarios[0];
-            _funcMaiorSalario = _funcionarios[0];
+            
             for (int i = 0; i < _funcionarios.Count; i++)
+            {
+                if (_funcionarios[i].Salario < _funcMenorSalario.Salario)
+                {
+                    _funcMenorSalario = _funcionarios[i];
+                }
+            }
+        }
+        public void CalcularMaiorSalario()
+        {
+            int i = 0;
+            _funcMaiorSalario = _funcionarios[0];
+            
+            while(i < _funcionarios.Count)            
             {
                 if (_funcionarios[i].Salario > _funcMaiorSalario.Salario)
                 {
                     _funcMaiorSalario = _funcionarios[i];
                 }
-
-                if (_funcionarios[i].Salario < _funcMenorSalario.Salario)
-                {
-                    _funcMenorSalario = _funcionarios[i];
-                }
+                i++;
             }
         }
         public void ApresentarFuncionarioMenorSalario()
